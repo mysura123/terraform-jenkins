@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'terraform init'
         sh 'terraform -v'
+        sh 'terraform plan'
       }
     }
     stage ("terraform Action") {
